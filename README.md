@@ -1,6 +1,27 @@
 # Ember-cli-feature-manager
 
-This README outlines the details of collaborating on this Ember addon.
+Feature Manager addon allows developerS to turn on and off feature for different reasons.
+It also allows them to test different implementations of a particular feature.
+
+## Setup
+
+`featureFlagsService`
+`featureManagerFixturesName`
+
+```
+[{
+	name: string,
+	flag: boolean,
+	implementations: [],
+	selected: []
+}, {
+	
+}
+...
+]
+```
+
+`features` and `FEATURES`
 
 ## Installation
 
@@ -23,3 +44,8 @@ This README outlines the details of collaborating on this Ember addon.
 * `ember build`
 
 For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+
+# TODO 
+- Finish the design of how `implementation` and `selected` arrays will be used
+- Write tests
+- write proper documentation

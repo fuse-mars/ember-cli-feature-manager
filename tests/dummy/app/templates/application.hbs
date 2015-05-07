@@ -1,3 +1,17 @@
-<h2 id="title">Welcome to Ember.js</h2>
+<div style="text-align: center;">
+	<h2 id="title">Feature Manager</h2>
+
+	<div>
+
+	</div>
+
+	{{#if features.search}}
+		Search feature is enabled, it has 2 implementations:<br>
+		{{!-- {{features.search.implementations}} --}}
+	{{/if}}
+
+</div>
+
+
 
 {{outlet}}

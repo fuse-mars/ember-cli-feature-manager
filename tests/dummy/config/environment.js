@@ -16,7 +16,24 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    }
+      featureManagerFixturesName: 'dummyFeatures',
+      FEATURES: [],
+      dummyFeatures: [{
+        name: 'search',
+        flag: true
+      }]
+    },
+
+    contentSecurityPolicy: {
+    'default-src': "'none'",
+    'script-src': "'self'",
+    'font-src': "'self'",
+    'connect-src': "'self'",
+    'img-src': "'self'",
+    'style-src': "'self' 'unsafe-inline'",
+    'media-src': "'self'"
+  }
+
   };
 
   if (environment === 'development') {
