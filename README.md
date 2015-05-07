@@ -1,6 +1,6 @@
 # Ember-cli-feature-manager
 
-Feature Manager addon allows developerS to turn on and off feature for different reasons.
+Feature Manager addon allows developers to define and turn on/off features for different reasons.
 It also allows them to test different implementations of a particular feature.
 
 ## Setup
