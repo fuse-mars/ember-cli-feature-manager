@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-feature-manager",
   "version": "0.0.0",
-  "description": "Feature Manager addon allows developerS to turn on and off feature for different reasons.",
+  "description": "Feature Manager addon allows developers to define and turn on/off features for different reasons.",
   "directories": {
     "doc": "doc",
     "test": "tests"
