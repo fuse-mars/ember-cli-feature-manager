@@ -17,8 +17,6 @@ var FeatureManager = Ember.Object.extend({
     var normalizedFeatures = Ember.create(null);
     var featureName;
 
-    console.log('[addon - features:setup]', features);
-
     for (var index in features) {
       var feature = features[index];
       if (this.isProperObject(feature)) {
@@ -43,7 +41,6 @@ var FeatureManager = Ember.Object.extend({
 
   //private
   isProperObject: function(feature) {
-    console.log('[addon - features:isProperObject]', feature, feature.hasOwnProperty('flag'));
     return feature.hasOwnProperty('name') && feature.hasOwnProperty('flag');
   },
 
@@ -82,7 +79,6 @@ var FeatureManager = Ember.Object.extend({
 
   _featureIsEnabled: function(feature) {
     var normalizeName = this.normalizeString(feature);
-    console.log('[addon - features:_featureIsEnabled]', normalizeName, FeatureManager._featureObjects, this);
     return FeatureManager._featureObjects[normalizeName] && FeatureManager._featureObjects[normalizeName].get('flag');
   },
 
@@ -97,7 +93,6 @@ var FeatureManager = Ember.Object.extend({
   },
 
   unknownProperty: function(key) {
-    console.info('[addon:FeatureManager - unknownProperty]', key);
 
     return this.isEnabled(key);
   },

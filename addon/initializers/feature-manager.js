@@ -42,7 +42,7 @@ var featuresWrapper = {
   }
 };
 
-var featuresObject;
+var featuresObject = Features.create({});
 function initialize(container, application) {
   // application.inject('route', 'foo', 'service:foo');
   featuresWrapper.application = application;
