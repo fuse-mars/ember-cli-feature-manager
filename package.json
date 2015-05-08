@@ -16,6 +16,11 @@
   "engines": {
     "node": ">= 0.10.0"
   },
+  "homepage": "https://github.com/mozilla/localForage",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fuse-mars/ember-cli-feature-manager.git"
+  },
   "author": "",
   "license": "MIT",
   "devDependencies": {
