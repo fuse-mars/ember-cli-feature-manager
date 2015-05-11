@@ -98,6 +98,7 @@ var FeatureManager = Ember.Object.extend({
   },
 
   implentations: function(){
+    // TODO 
     /**
      * more design work is needed here
      */

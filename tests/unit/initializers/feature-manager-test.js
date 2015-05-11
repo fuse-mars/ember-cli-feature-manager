@@ -16,8 +16,7 @@ module('FeatureManagerInitializer', {
 
 // Replace this with your real tests.
 test('it works', function(assert) {
-  assert.expect(2);
-  assert.ok(Ember.isNone(featuresObject));
+  assert.expect(1);
 
   initialize(container, application);
 

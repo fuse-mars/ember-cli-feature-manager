@@ -17,12 +17,9 @@ var featuresWrapper = {
       init: function() {
         this._super.apply(this, arguments);
 
-        var fixtures = application.featureManagerFixturesName || 'FEATURES';
+        var fixtures = application.featureManagerFixtures || 'FEATURES';
 
         // TODO make sure service and fixtures are of different name
-
-        console.log('[addon:initialize:util object - features]', application, application[fixtures]);
-
         // 
         if (application && !Ember.isNone(application[fixtures]) &&
           Ember.isArray(application[fixtures])) {
@@ -47,7 +44,7 @@ function initialize(container, application) {
   // application.inject('route', 'foo', 'service:foo');
   featuresWrapper.application = application;
 
-  var serviceName = application.featureFlagsService || 'features';
+  var serviceName = application.featureManagerService || 'features';
   application.register('features:manager', featuresWrapper.getFMClass());
   application.inject('route', serviceName, 'features:manager');
   application.inject('controller', serviceName, 'features:manager');
