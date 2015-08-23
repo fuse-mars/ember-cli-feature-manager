@@ -6,7 +6,7 @@ var FeatureManager = Ember.Object.extend({
 
   init: function() {
     this._super.apply(this, arguments);
-    FeatureManager._featureObjects = Ember.create(null);
+    FeatureManager._featureObjects = Object.create(null);
 
     this.setUnknownProperty = function(key) {
       throw new Error("Please use enable/disable to set feature featureNames. You attempted to set " + key);
@@ -14,7 +14,7 @@ var FeatureManager = Ember.Object.extend({
   },
 
   setup: function(features) {
-    var normalizedFeatures = Ember.create(null);
+    var normalizedFeatures = Object.create(null);
     var featureName;
 
     for (var index in features) {
@@ -108,7 +108,7 @@ var FeatureManager = Ember.Object.extend({
 
 // create a shared object - you call '_featureObjects', a static variable
 FeatureManager.reopenClass({
-  _featureObjects: Ember.create(null)
+  _featureObjects: Object.create(null)
 });
 
 export default FeatureManager;

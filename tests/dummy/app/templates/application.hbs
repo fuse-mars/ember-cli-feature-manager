@@ -2,12 +2,20 @@
 	<h2 id="title">Feature Manager</h2>
 
 	<div>
-
+		{{#if features.noLogin}}
+			noLogin is true
+		{{else}}
+			noLogin is false
+		{{/if}}
 	</div>
-
+	<hr>
 	{{#if features.search}}
 		Search feature is enabled, it has 2 implementations:<br>
-		{{!-- {{features.search.implementations}} --}}
+		{{features.search.implementations}}
+		<ul>
+			<li>Work in progress ...</li>
+			<li>Work in progress ...</li>
+		</ul>
 	{{/if}}
 
 </div>

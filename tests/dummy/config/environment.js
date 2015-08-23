@@ -18,22 +18,38 @@ module.exports = function(environment) {
       // when it is created
       featureManagerService: 'features',
       featureManagerFixturesName: 'dummyFeatures',
-      FEATURES: [],
       dummyFeatures: [{
         name: 'search',
         flag: true
+      }],
+
+      FEATURES: [{
+        name: 'noLogin',
+        flag: true,
+        settings: {
+          options: [],
+          selected: null
+        }
+      }, {
+        name: "search",
+        flag: true,
+        settings: {
+          options: ["alerts", "history", "notes"],
+          selected: null
+        }
       }]
+
     },
 
     contentSecurityPolicy: {
-    'default-src': "'none'",
-    'script-src': "'self'",
-    'font-src': "'self'",
-    'connect-src': "'self'",
-    'img-src': "'self'",
-    'style-src': "'self' 'unsafe-inline'",
-    'media-src': "'self'"
-  }
+      'default-src': "'none'",
+      'script-src': "'self'",
+      'font-src': "'self'",
+      'connect-src': "'self'",
+      'img-src': "'self'",
+      'style-src': "'self' 'unsafe-inline'",
+      'media-src': "'self'"
+    }
 
   };
 

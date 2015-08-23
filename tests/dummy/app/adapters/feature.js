@@ -15,3 +15,5 @@ var NumberAdapter = DS.FixtureAdapter.extend({
     });
   }
 });
+
+export default NumberAdapter;
