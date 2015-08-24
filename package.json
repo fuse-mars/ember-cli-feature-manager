@@ -11,7 +11,7 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": "fuse-mars/ember-cli-feature-manager",
   "engines": {
     "node": ">= 0.10.0"
   },
