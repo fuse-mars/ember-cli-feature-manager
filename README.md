@@ -21,10 +21,10 @@ The feature-data name specifies the array object that contains a list of feature
 Below is the data format:
 ```json
 [{
-	name: string,
-	flag: boolean,
-	implementations: [],
-	selected: []
+	"name": "<string>",
+	"flag": "<boolean>",
+	"implementations": "<[]>",
+	"selected": "<string>"
 }, {
 	
 }
@@ -72,6 +72,6 @@ APP: {
 For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
 
 # TODO 
-- Finish the design of how `implementation` and `selected` arrays will be used
+- Finish the design of how `implementation` and `selected` attributes, will be used
 - Write tests
 - write proper documentation
