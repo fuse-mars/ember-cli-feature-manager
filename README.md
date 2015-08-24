@@ -19,7 +19,7 @@ These default to `features` and `FEATURES` respectively.
 The service name is what get used when injecting the addon into routes, controllers, and components.
 The feature-data name specifies the array object that contains a list of features.
 Below is the data format:
-```
+```json
 [{
 	name: string,
 	flag: boolean,
@@ -33,7 +33,7 @@ Below is the data format:
 ```
 
 **Ex:**
-```
+```js
 APP: {
     featureManagerService: 'features'
     featureManagerFixtures: 'FEATURES',
@@ -41,7 +41,7 @@ APP: {
         name: 'search',
         flag: true,
         implementations: ['facetView', 'backend-solr', 'backend-essearch', 'google'],
-        selected:['facetView', 'backend-essearch']
+        selected: 'facetView'
       },{
         name: 'login',
         flag: true
